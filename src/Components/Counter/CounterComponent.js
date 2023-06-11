@@ -3,8 +3,11 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
+// Read data from store with useSelector
+// Dispatch actions with useDispathc
 import { useSelector, useDispatch } from 'react-redux';
 import {decrement,increment, incrementByAmount, selectCount} from './counterSlice';
+
 
 export function CounterComponent()  {
   const count = useSelector(selectCount)
